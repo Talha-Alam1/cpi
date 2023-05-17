@@ -1,0 +1,63 @@
+.message {
+    position: relative;
+    padding: 30px 0 80px;
+    text-align: center;
+    background-image: url(../images/dot-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+        max-width: 1230px;
+    }
+    .message-item{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .content{
+            position: absolute;
+            bottom: 46px;
+            left: 20px;
+            width: calc(100% - 117px);
+            background-color: #EF412390;
+            padding: 20px 30px 20px 10px;
+            transition: 0.5s;
+            p{
+                color: #FFFFFF;
+                font-weight: 400;
+                font-size: 27.5px;
+                line-height: 32px;
+                text-align: left;
+            }
+            &::after{
+                position: absolute;
+                content: '';
+                left: 0;
+                bottom: -25px;
+                width: 0;
+                height: 0;
+                border-left: 13px solid transparent;
+                border-right: 17px solid transparent;
+                border-top: 26px solid #EF412390;
+            }
+        }
+        &:hover{
+            .content{
+                transform: translateY(-15px);
+                transition: 0.5s;
+            }
+        }
+    }
+    &::before{
+        position: absolute;
+        content: '';
+        background-image: url(../images/mess-art.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        left: 0;
+        bottom: 0;
+        width: 142px;
+        height: 300px;
+    }
+}

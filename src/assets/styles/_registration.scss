@@ -1,0 +1,50 @@
+.registration {
+    background-image: url(../images/registration.png);
+    background-color: #0026AB;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0 100px;
+    h4{
+        color: #FFFFFF;
+    }
+    .form {
+        .d-flex {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .field-wrap {
+                position: relative;
+                width: 100%;
+                margin-bottom: 40px;
+                &.half {
+                    width: 47.2%;
+                }
+                span {
+                    position: absolute;
+                    color: red;
+                    font-size: 20px;
+                    font-weight: 600;
+                    width: 100%;
+                    left: 0;
+                    bottom: -40px;
+                }
+                &.submit {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                }
+                label{
+                    span{
+                        position: static;
+                        width: auto;
+                    }
+                }
+                input{
+                    &::placeholder{
+                        color: #0026AB;
+                    }
+                }
+            }
+        }
+    }
+}

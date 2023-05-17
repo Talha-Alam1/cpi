@@ -1,0 +1,41 @@
+.overview {
+    position: relative;
+    background-color: #0026AB;
+    padding-top: 100px;
+    .overviewInner{
+        border-top: 1px solid #00AEEF;
+        padding: 77px 0 144px;
+        .content {
+            color: #FFFFFF;
+            max-width: 940px;
+            h2,p {
+                color: #FFFFFF;
+            }
+        }
+        .image {
+            position: absolute;
+            bottom: -14%;
+            right: 15%;
+            width: auto;
+        }
+        .sidebar {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 150px;
+            background-color: #3AD292;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 220px 0;
+            img{
+                transform: rotate(270deg);
+            }
+            a{
+                color: #FFFFFF;
+                transform: rotate(270deg);
+            }
+        }
+    }
+}

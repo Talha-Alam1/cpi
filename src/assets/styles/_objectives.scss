@@ -1,0 +1,63 @@
+.objectives {
+    position: relative;
+    padding: 158px 0 300px;
+    background-image: url(../images/dot-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .content{
+        width: 100%;
+        max-width: 980px;
+        margin: 0 auto;
+        ul {
+            li{
+                position: relative;
+                margin-bottom: 40px;
+                max-width: 830px;
+                padding-left: 33px;
+                transition: 0.5s;
+                cursor: pointer;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                &:hover{
+                    transition: 0.5s;
+                    transform: translateX(10px);
+                }
+                &:before{
+                    position: absolute;
+                    top: 6px;
+                    left: 0;
+                    content: '';
+                    width: 22px;
+                    height: 24px;
+                    background-image: url(../images/list.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+    &::before, &::after{
+        position: absolute;
+        content: '';
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &::before{
+        background-image: url(../images/obj-Img.png);
+        width: 400px;
+        height: 100%;
+        top: 0;
+        border-bottom: 50px solid #3AD292;
+    }
+    &:after{
+        background-image: url(../images/pattern.png);
+        bottom: 50px;
+        right: 0;
+        width: 410px;
+        height: 280px;
+    }
+}
