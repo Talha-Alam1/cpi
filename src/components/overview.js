@@ -4,7 +4,7 @@ import logo from '../assets/images/logo.svg'
 
 const Overview = () => {
     return (
-        <section className="overview">
+        <section className="overview" id='view'>
             <div className="overviewInner">
                 <div className="container">
                     <div className="row">

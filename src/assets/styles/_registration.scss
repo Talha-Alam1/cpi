@@ -32,6 +32,9 @@
                     display: flex;
                     justify-content: flex-end;
                     align-items: flex-end;
+                    .btn{
+                        min-width: 266px;
+                    }
                 }
                 label{
                     span{

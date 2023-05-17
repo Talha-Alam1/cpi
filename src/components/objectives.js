@@ -2,7 +2,7 @@ import React from 'react';
 
 const Objectives = () => {
     return (
-        <section className="objectives">
+        <section className="objectives" id='obj'>
             <div className="container">
                 <div className="row">
                     <div className="content">

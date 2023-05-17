@@ -1,11 +1,9 @@
 import React from 'react';
-import Item1 from '../assets/images/item1.jpg';
-import Item2 from '../assets/images/item2.jpg';
-import Item3 from '../assets/images/item3.jpg';
+import {agendaData} from './agendaData';
 
 const Agenda = () => {
     return (
-        <section className="agenda">
+        <section className="agenda" id='agenda'>
             <div className="container">
                 <div className='sec-title'>
                     <h3>Agenda</h3>
@@ -13,48 +11,15 @@ const Agenda = () => {
                 <div className="row">
                     <div className="list">
                         <ul>
-                            <li>
-                                <h4>5:00 PM</h4>
-                                <p>Welcome and EMCEE opening remarks</p>
-                            </li>
-                            <li>
-                                <h4>5:00 PM</h4>
-                                <p>Welcome and EMCEE opening remarks</p>
-                            </li>
-                            <li>
-                                <h4>5:00 PM</h4>
-                                <p>Welcome and EMCEE opening remarks</p>
-                            </li>
-                            <li>
-                                <h4>5:00 PM</h4>
-                                <p>Welcome and EMCEE opening remarks</p>
-                            </li>
-                            <li>
-                                <h4>5:00 PM</h4>
-                                <p>Welcome and EMCEE opening remarks</p>
-                            </li>
-                            <li>
-                                <h4>5:00 PM</h4>
-                                <p>Welcome and EMCEE opening remarks</p>
-                            </li>
-                            <li>
-                                <h4>5:00 PM</h4>
-                                <p>Welcome and EMCEE opening remarks</p>
-                            </li>
-                            <li>
-                                <h4>5:00 PM</h4>
-                                <p>Welcome and EMCEE opening remarks</p>
-                            </li>
-                            <li>
-                                <h4>5:00 PM</h4>
-                                <a href='#'>Panel discussion 1</a>
-                                <p>Welcome and EMCEE opening remarks</p>
-                            </li>
-                            <li>
-                                <h4>5:00 PM</h4>
-                                <a href='#'>Panel discussion 2</a>
-                                <p>Welcome and EMCEE opening remarks</p>
-                            </li>
+                            {agendaData.map((item, index)=>{
+                                console.log(item)
+                                return (
+                                    <li key={index}>
+                                        <h4>{item.time}</h4>
+                                        <p>{item.discription}</p>
+                                </li>
+                                )
+                            })}
                         </ul>
                     </div>
                 </div>

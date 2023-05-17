@@ -1,13 +1,29 @@
-import React from 'react';
+import React, { useRef, useLayoutEffect } from 'react';
 import { useState } from 'react';
 import logo from '../assets/images/logo.svg'
 
 const Header = () => {
-    
+    // sicky Header
+    const stickyHeader = useRef()
+    useLayoutEffect(() => {
+        const mainHeader = document.getElementById('mainHeader')
+        let fixedTop = stickyHeader.current.offsetTop
+        const fixedHeader = () => {
+        if (window.pageYOffset > fixedTop) {
+            mainHeader.classList.add('sticky')
+        } else {
+            mainHeader.classList.remove('sticky')
+        }
+        }
+        window.addEventListener('scroll', fixedHeader)
+    }, [])
+
+    // Menu Btn
     const [isNavExpanded, setIsNavExpanded] = useState(false)
 
     return (
-        <header className='header'>
+        
+        <header className='header' id="mainHeader" ref={stickyHeader}>
             <div className='container'>
                 <div className='d-flex'>
                     <div className='logo'>
@@ -24,19 +40,19 @@ const Header = () => {
                         <nav className={ isNavExpanded ? "menu expanded" : "menu" }>
                             <ul>
                                 <li>
-                                    <a href="#">Overview</a>
+                                    <a href="#view">Overview</a>
                                 </li>
                                 <li>
-                                    <a href="#">Objectives</a>
+                                    <a href="#obj">Objectives</a>
                                 </li>
                                 <li>
-                                    <a href="#">Key Messages</a>
+                                    <a href="#key">Key Messages</a>
                                 </li>
                                 <li>
-                                    <a href="#">Agenda</a>
+                                    <a href="#agenda">Agenda</a>
                                 </li>
                                 <li>
-                                    <a href="#">Register now</a>
+                                    <a href="#registration">Register now</a>
                                 </li>
                             </ul>
                         </nav>

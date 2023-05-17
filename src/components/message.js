@@ -5,7 +5,7 @@ import Item3 from '../assets/images/item3.jpg';
 
 const Message = () => {
     return (
-        <section className="message">
+        <section className="message" id='key'>
             <div className="container">
                 <div className='sec-title'>
                     <h3>Key Messages</h3>
