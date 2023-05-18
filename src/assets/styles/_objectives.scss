@@ -5,10 +5,35 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    @media (max-width: 1199px){
+        padding: 100px 0 250px;
+    }
+    @media (max-width: 1199px){
+        padding: 100px 0 180px;
+    }
     .content{
         width: 100%;
         max-width: 980px;
         margin: 0 auto;
+        @media (max-width: 1800px){
+            max-width: 830px; 
+        }
+        @media (max-width: 1600px){
+            max-width: 700px;
+        }
+        @media (max-width: 1366px){
+            max-width: 600px;
+        }
+        @media (max-width: 1199px){
+            max-width: 500px;
+        }
+        @media (max-width: 991px){
+            max-width: 420px;
+        }
+        @media (max-width: 767px){
+            max-width: calc(100% - 100px);
+            margin-right: 0;
+        }
         ul {
             li{
                 position: relative;
@@ -17,6 +42,9 @@
                 padding-left: 33px;
                 transition: 0.5s;
                 cursor: pointer;
+                @media (max-width: 1800px){
+                    max-width: 100%; 
+                }
                 &:last-child{
                     margin-bottom: 0;
                 }
@@ -30,11 +58,15 @@
                     left: 0;
                     content: '';
                     width: 22px;
-                    height: 24px;
+                    height: 25px;
                     background-image: url(../images/list.svg);
                     background-position: center;
                     background-repeat: no-repeat;
-                    background-size: cover;
+                    background-size: contain;
+                    @media (max-width: 1440px){
+                        width: 18px;
+                        height: 20px;
+                    }
                 }
             }
         }
@@ -52,6 +84,24 @@
         height: 100%;
         top: 0;
         border-bottom: 50px solid #3AD292;
+        @media (max-width: 1700px){
+            width: 330px;
+        }
+        @media (max-width: 1440px){
+            width: 300px;
+        }
+        @media (max-width: 1366px){
+            width: 250px;
+        }
+        @media (max-width: 1199px){
+            border-width: 30px;
+        }
+        @media (max-width: 991px){
+            width: 150px;
+        }
+        @media (max-width: 767px){
+            width: 100px;
+        }
     }
     &:after{
         background-image: url(../images/pattern.png);
@@ -59,5 +109,21 @@
         right: 0;
         width: 410px;
         height: 280px;
+        @media (max-width: 1600px){
+            width: 290px;
+            height: 200px;
+        }
+        @media (max-width: 1366px){
+            width: 240px;
+            height: 160px;
+        }
+        @media (max-width: 1199px){
+            width: 200px;
+            height: 140px
+        }
+        @media (max-width: 767px){
+            width: 150px;
+            height: 100px
+        }
     }
 }

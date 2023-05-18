@@ -7,6 +7,9 @@
     padding: 10px 0 47px;
     .container {
         max-width: 1230px;
+        @media (max-width: 1440px){
+            max-width: 80%;
+        }
         .sec-title{
             text-align: center;
         }
@@ -16,11 +19,26 @@
                     position: relative;
                     margin-bottom: 40px;
                     padding-bottom: 40px;
+                    @media (max-width: 1600px){
+                        margin-bottom: 30px;
+                        padding-bottom: 30px;
+                    }
+                    @media (max-width: 991px){
+                        margin-bottom: 20px;
+                        padding-bottom: 20px;
+                    }
                     h4{
                         color: #3AD292;
                         font-size: 40px;
                         line-height: 1.2;
                         margin-bottom: 17px;
+                        @media (max-width: 1600px){
+                            font-size: 32px;
+                        }
+                        @media (max-width: 991px){
+                            font-size: 26px;
+                            margin-bottom: 12px;
+                        }
                     }
                     p{
                         margin-bottom: 0;
@@ -66,6 +84,22 @@
         bottom: 15%;
         width: 181px;
         height: 247px;
+        @media(max-width:1700px){
+            width: 150px;
+            height: 190px;
+        }
+        @media (max-width: 1600px){
+            width: 100px;
+            height: 120px;
+        }
+        @media (max-width: 991px){
+            width: 70px;
+            height: 90px;
+        }
+        @media (max-width: 767px){
+            width: 40px;
+            height: 50px;
+        }
     }
     &::after{
         background-image: url(../images/diamond.svg);
@@ -73,5 +107,17 @@
         top: 15%;
         width: 138px;
         height: 181px; 
+        @media (max-width: 1600px){
+            width: 100px;
+            height: 130px;
+        }
+        @media (max-width: 991px){
+            width: 70px;
+            height: 90px;
+        }
+        @media (max-width: 767px){
+            width: 50px;
+            height: 80px;
+        }
     }
 }

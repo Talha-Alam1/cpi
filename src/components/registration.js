@@ -57,7 +57,7 @@ function Registration() {
         <>
             <section className="registration" id='registration'>
                 <div className="container">
-                    <div className="text-center">
+                    <div className="text-center sec-title">
                         <h4>Register now</h4>
                     </div>
                     <div className="form">
@@ -123,7 +123,7 @@ function Registration() {
                                 ) : null}
                             </div>
                             <div className="field-wrap half">
-                                <label htmlFor="email">Are you?</label>
+                                <label htmlFor="email">Are you?<span>*</span></label>
                                 <select
                                     name="gender"
                                     value={formik.values.gender}
@@ -143,7 +143,6 @@ function Registration() {
                                     </option>
                                 </select>
                             </div>
-
                             <div className="field-wrap half submit">
                                 <input className="btn" type="submit" value="Submit"></input>
                             </div>
