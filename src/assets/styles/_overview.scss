@@ -45,6 +45,10 @@
                 bottom: -12%;
                 right: 10%;
             }
+            @media (max-width: 480px){
+                bottom: -6%;
+                right: 2%;
+            }
             img{
                 @media (max-width: 1700px){
                     width: 90%;
@@ -61,6 +65,9 @@
                 }
                 @media (max-width: 991px){
                     width: 50%;
+                }
+                @media (max-width: 480px){
+                    width: 40%;
                 }
             }
         }
