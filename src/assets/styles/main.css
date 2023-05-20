@@ -11428,7 +11428,7 @@ textarea.form-control-lg {
   padding: 30px 0 80px;
   text-align: center;
   background-image: url(../images/dot-bg.png);
-  background-position: center;
+  background-position: top -15px center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -11524,7 +11524,7 @@ textarea.form-control-lg {
   position: absolute;
   content: "";
   left: 0;
-  bottom: -25px;
+  bottom: -26px;
   width: 0;
   height: 0;
   border-left: 13px solid transparent;
@@ -11854,6 +11854,26 @@ textarea.form-control-lg {
 }
 .footer .container .navigation ul li {
   margin-bottom: 10px;
+}
+.footer .container .navigation ul li a {
+  position: relative;
+}
+.footer .container .navigation ul li a::after {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3ad292;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+.footer .container .navigation ul li a:hover::after {
+  transition: transform 0.5s;
+  transform: scaleX(1);
+  transform-origin: left;
 }
 .footer .container .subscribe p {
   color: #FFFFFF;
@@ -12283,9 +12303,15 @@ img {
 }
 .btn:focus {
   box-shadow: none;
+  color: #FFFFFF;
 }
 .btn:hover {
   background-color: #FFFFFF;
   color: #0026AB;
   transition: 0.3s;
+}
+.btn:active {
+  color: #FFFFFF;
+  background-color: #0026AB;
+  border-color: #0026AB;
 }/*# sourceMappingURL=main.css.map */

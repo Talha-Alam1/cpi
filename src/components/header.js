@@ -30,7 +30,7 @@ const Header = () => {
                         <a href='/'><img src={logo} alt='Logo'></img></a>
                     </div>
                     <div className='menu-wrap'>
-                        <button className='btn'>Register now</button>
+                        <a href="#registration" className='btn'>Register now</a>
                         <button className={ isNavExpanded ? "hamburger open" : "hamburger" } onClick={() => { setIsNavExpanded(!isNavExpanded); }} >
                             <span></span>
                             <span></span>
